@@ -1,0 +1,83 @@
+<div class="container" style="padding-top: 50px;">
+    <h3>Contáctenos</h3>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus facilis accusantium architecto expedita, quaerat doloremque cupiditate obcaecati quo blanditiis, inventore libero dignissimos, earum exercitationem necessitatibus vel labore? Iste, atque eos.  
+    <br>
+    <br>
+  
+    </p>
+    <div class="row">
+        <div class="col-6">
+            <form [formGroup]="contactusForm">
+                <div formGroupName="persona">
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <div>
+                                <label>Nombres:</label>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" formControlName="nombres" class="form-control" placeholder="Ingrese nombre">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <div>
+                                <label class="form-group"> Apellidos:</label>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <input type="text" formControlName="apellidos" class="form-control" placeholder="Ingrese apellidos" >
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="form-group row">
+                    <div class="col-3">
+                        <div>
+                            <label>email: </label>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <input type="email" formControlName="email" class="form-control" placeholder="Ingrese email">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-3">
+                        <div>
+                            <label>Mensaje: </label>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <textarea formControlName="mensaje" class="form-control" placeholder="Escriba aqui su mensaje" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button (click)="_onSubmit()" class="btn btn-info mx-auto d-block" > 
+                        Enviar
+                    </button>
+                </div>
+            </form>
+            
+            datos: {{contactusForm.value|json}}
+
+
+        </div>
+        <div class="col-6">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2319.6755159448626!2d-77.0398991394944!3d-12.097521106481084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c92295669c47%3A0xcdf7711e9629c62a!2sCONFIPETROL%20ANDINA%20S.A!5e0!3m2!1ses-419!2spe!4v1644889511801!5m2!1ses-419!2spe" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <b>Telefono:</b>(51 1) 710 6100
+                <br>
+                <b>Dirección:</b> Av. Santo Toribio No 173, Torre Real 8 - P10 - San Isidro 
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
