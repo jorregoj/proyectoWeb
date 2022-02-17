@@ -10,6 +10,8 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MainpageComponent } from './pages/mainpage/mainpage.component';
 import { ResultadosComponent } from './pages/resultados/resultados.component';
+import { RegComponenteComponent } from './pages/reg-componente/reg-componente.component';
+import { RegEquipoComponent } from './pages/reg-equipo/reg-equipo.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ResultadosComponent } from './pages/resultados/resultados.component';
     LoginComponent,
     MainpageComponent,
     ResultadosComponent,
+    RegComponenteComponent,
+    RegEquipoComponent,
   ],
   imports: [
     BrowserModule,
